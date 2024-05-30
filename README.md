@@ -5,4 +5,5 @@
 <a href="https://aditiiprasad.github.io/Aditi/">
   <img src="images\photo.jpg" height="100"> 
 </a>
+ Click me to view the Project
 </p>
