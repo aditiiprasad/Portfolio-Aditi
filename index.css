@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+    background-color: rgb(2, 4, 27);
+    color: white;
+}
+/* TOPBAR */
+.topbar{
+    height: 150px;
+    background-image: url("https://capsule-render.vercel.app/api?type=waving&height=150&color=102ce0");
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ /* NAME */
+.name{
+    background-color: transparent;
+    text-align: left;
+    font-family: "Roboto Slab";
+    font-size: 80px;
+    font-weight: 600;   
+}
+.name p{
+    font-size: 1rem;
+    background-color: transparent;
+}
+/* CONTACT */
+.contact{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition-duration: 1s;
+}
+
+
+.social{
+    background-color: transparent;
+}
+.social a{
+    background-color: transparent;
+}
+.social i {
+    background-color: transparent;
+    font-size: 2.3rem;
+    margin-left: 2rem;
+}
+.email{
+    background-color: transparent;
+    margin-left: 20px;
+}
+.email p{
+    background-color: transparent;
+}
+.big{
+    transition-duration: 1s;
+}
+.big:hover{
+    font-size: 25px;
+}
+
+/* CONTEXT */
+
+/* NAVBAR */
+.navbar{
+    height: 70px;
+    background-color: rgba(0, 0, 255,0.3);
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar a{
+    background-color: transparent;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition-duration: 0.5s;
+    
+}
+.navbar a:hover{
+    font-size: 1.4rem;
+    
+}
+
+.resume{
+    border: 3px solid white;
+    border-radius: 35%;
+    height:35px;
+    width: 8rem;
+    text-align: center;
+    padding-top: 5px;
+}
+/* M A I N */
+.main{
+    background-color: transparent;
+    height:480px;
+    display: flex;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+/* TASKBAR */
+.taskbar{
+    background-color: transparent;
+    height: 480px;
+    width: 25%
+    
+      
+}
+.tb{
+    height: 480px;
+    width: 25%;
+    background-color: rgba(0, 0, 255,0.2);
+    transition-duration: 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgb(173, 228, 219);
+    border-radius: 25%;
+}
+.tb:hover{
+    width: 100%;
+    background-color: rgba(25, 30, 186, 0.2);
+
+}
+.tb div{
+    background-color: transparent;
+    margin-top: 2rem;
+}
+.tb i{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.tb a{
+    font-size: 1.3rem;
+    text-decoration:none ;
+    border: 2px solid transparent;
+    background-color: transparent;
+    padding: 0.7rem;
+    border-radius: 25%;
+    transition-duration: 0.5s;
+}
+.tb a:hover{
+    background-color: rgba(76, 20, 197,0.2);
+
+}
+/* About */
+.about{
+    background-color:rgba(25, 30, 186, 0.2);
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+    border: 2x solid transparent;
+    border-radius: 25%;
+}
+
+.am{
+    width: 20%;
+    height: 200px;
+    background-color: transparent;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.am b{
+    background-color: transparent;
+    color: rgb(173, 228, 219);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.para{
+    width: 50%;
+    height: 400px;
+    background-color:transparent;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: rgb(173, 228, 219);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.photo{
+    width: 30%;
+    height: 280px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("images/photo.jpg");
+    background-size: contain;
+}
