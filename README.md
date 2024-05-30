@@ -3,6 +3,6 @@
 </p>
 <p>
 <a href="https://aditiiprasad.github.io/Aditi/">
-  <img src="Aditi\images\photo.jpg" alt="click me" height="100"> 
+  <img src="images\photo.jpg" height="100"> 
 </a>
 </p>
