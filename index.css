@@ -122,6 +122,7 @@
     overflow: hidden;
     border: 2px solid transparent;
     border-radius: 25%;
+    
 }
 .tb:hover{
     width: 100%;
@@ -164,7 +165,7 @@
     transition:  background-color 0.5s , color 0.5s;
 }
 .about:hover{
-    background-color: rgba(25, 116, 186, 0.4);
+    background-color: #1974ba66;
     color: white;
 }
 
@@ -203,3 +204,75 @@
     background-image: url("images/photo.jpg");
     background-size: contain;
 }
+/* MAIN BODY 2 */
+.main2{
+    
+    height:570px;
+   
+    
+    background-image: url("images/background.jpg"); 
+    background-size: cover;
+
+}
+.pro{
+    height: 180px;
+    width:100%;
+    background-color: transparent;
+    background-image: url(" https://capsule-render.vercel.app/api?type=venom&height=120&color=1974ba66&text=Projects&fontColor=dfe6ed&fontSize=25");
+    background-size: contain
+    
+    
+}
+.box{
+    height: 360px;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.circle{
+    height:260px ;
+    width: 20%;
+    border: 4px solid #1974ba;
+    border-radius: 50%;
+    background-color: #1974ba66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: "Roboto Slab";
+    font-weight: 600;
+    text-decoration: underline rgb(240, 241, 242)  ;
+}
+.circle:hover{
+    height: 280px;
+    width: 22% ;
+}
+.c1{
+    background-image: url("images/website.png");
+    background-size: cover;
+}
+.c2{
+    background-image: url("images/amazon.png");
+    background-size: cover;
+}
+.c3{
+    background-image: url("images/work\ in\ progress.png");
+    background-size: cover;
+}
+.c4{
+    background-image: url("images/work\ in\ progress.png");
+    background-size: cover;
+}
+.circle a{
+    background-color: transparent;
+}
+/* footer */
+.foot{
+    height: 150px;
+    background-image: url("https://capsule-render.vercel.app/api?type=waving&height=150&color=1974ba&text=Happy%20Exploring!&fontColor=dfe6ed&fontSize=40&section=footer");
+    background-size: cover;
+}
+
