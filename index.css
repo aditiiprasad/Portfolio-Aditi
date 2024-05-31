@@ -8,7 +8,7 @@
 /* TOPBAR */
 .topbar{
     height: 150px;
-    background-image: url("https://capsule-render.vercel.app/api?type=waving&height=150&color=102ce0");
+    background-image: url("https://capsule-render.vercel.app/api?type=waving&height=150&color=34a4eb");
     background-size: cover;
     display: flex;
     justify-content: space-evenly;
@@ -65,12 +65,14 @@
 
 /* NAVBAR */
 .navbar{
-    height: 70px;
-    background-color: rgba(0, 0, 255,0.3);
+    height: 60px;
+    background-color: rgba(52, 164, 235,0.2);
     margin-top: 25px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border: 2px solid transparent;
+    
 }
 .navbar a{
     background-color: transparent;
@@ -99,7 +101,8 @@
     background-color: transparent;
     height:480px;
     display: flex;
-    background-image: url("images/background.jpg");
+    align-items: center;
+     background-image: url("images/background.jpg"); 
     background-size: cover;
 }
 /* TASKBAR */
@@ -113,16 +116,16 @@
 .tb{
     height: 480px;
     width: 25%;
-    background-color: rgba(0, 0, 255,0.2);
+    background-color: rgba(15, 130, 201, 0.2);
     transition-duration: 0.5s;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 2px solid rgb(173, 228, 219);
+    border: 2px solid transparent;
     border-radius: 25%;
 }
 .tb:hover{
     width: 100%;
-    background-color: rgba(25, 30, 186, 0.2);
+    background-color: rgba(25, 116, 186, 0.2);
 
 }
 .tb div{
@@ -133,6 +136,7 @@
     font-size: 2.5rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    background-color: transparent;
 }
 .tb a{
     font-size: 1.3rem;
@@ -144,19 +148,24 @@
     transition-duration: 0.5s;
 }
 .tb a:hover{
-    background-color: rgba(76, 20, 197,0.2);
+    background-color: rgba(25, 116, 186, 0.4);
 
 }
 /* About */
 .about{
-    background-color:rgba(25, 30, 186, 0.2);
-    height: 480px;
+    background-color:rgba(25, 116, 186, 0.2);
+    height: 380px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 75%;
     border: 2x solid transparent;
-    border-radius: 25%;
+    border-radius: 2%;
+    transition:  background-color 0.5s , color 0.5s;
+}
+.about:hover{
+    background-color: rgba(25, 116, 186, 0.4);
+    color: white;
 }
 
 .am{
@@ -173,7 +182,7 @@
 .am b{
     background-color: transparent;
     color: rgb(173, 228, 219);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Roboto Slab";
 }
 
 .para{
@@ -181,9 +190,8 @@
     height: 400px;
     background-color:transparent;
     font-size: 1.1rem;
-    font-style: italic;
     color: rgb(173, 228, 219);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"Roboto Slab";
     display: flex;
     align-items: center;
 }
