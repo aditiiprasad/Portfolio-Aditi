@@ -38,17 +38,15 @@
 </h4>
  <h4>2.LEARNINGS-
  <BR>
-  Improved proficiency in structuring layouts and styling elements.
+  JavaScript enabled interactive game controls and user engagement.
+    <BR>
+Dynamic content management improved site performance.
+    <BR>
+Event handling and DOM manipulation facilitated seamless game functionalities.
   <BR>
+
   Clean coding emphasized for an appealing interface & practical front-end experience.
-  <BR>
-  Understanding the importance of Git for tracking changes and collaborating on projects.
-  <BR>
-  Dealt with the intricacies of styling a complex webpage layout
- </h4>
- <H4>3.DRAWBACKS
-  <BR>
-  Did not implement responsive design to ensure compatibility across various screen sizes.
+ 
  </H4>
 
 
