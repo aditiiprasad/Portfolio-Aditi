@@ -31,6 +31,24 @@
    
   </div>
 </div>
+# WEB DEV DIARIES (31/05/2024)
+<h4>
+ 1. Tried making a portfolio website , made some rookie efforts although dont have any achievements,experience and profects to flex about.
+</h4>
+ <h4>2.LEARNINGS-
+ <BR>
+  Improved proficiency in structuring layouts and styling elements.
+  <BR>
+  Clean coding emphasized for an appealing interface & practical front-end experience.
+  <BR>
+  Understanding the importance of Git for tracking changes and collaborating on projects.
+  <BR>
+  Dealt with the intricacies of styling a complex webpage layout
+ </h4>
+ <H4>3.DRAWBACKS
+  <BR>
+  Did not implement responsive design to ensure compatibility across various screen sizes.
+ </H4>
 
 
 
