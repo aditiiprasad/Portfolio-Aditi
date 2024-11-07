@@ -1,0 +1,43 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   
+
+}
+*{
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(239, 234, 227);
+  text-shadow: 3px 3px 5px rgba(192, 102, 12, 0.7);
+  padding: 10px;
+
+  animation: move 2s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(10px); /* Move right */
+  }
+  50% {
+    transform: translateX(0); /* Back to original position */
+  }
+  75% {
+    transform: translateX(-10px); /* Move left */
+  }
+  100% {
+    transform: translateX(0); /* Back to original position */
+  }
+}
