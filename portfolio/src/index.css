@@ -1,6 +1,7 @@
 body{
   background-image: url('assets/background.webp');  
-  background-repeat: repeat;  
+  background-repeat:no-repeat;  
   background-size: cover;  
   background-position: top left; 
+  background-color: rgb(10, 3, 45);
 }
