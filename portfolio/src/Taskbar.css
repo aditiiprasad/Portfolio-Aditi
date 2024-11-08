@@ -3,7 +3,7 @@
 
 
 .top-bar {
-    background-color: #404656 ;
+    background-color: #0e0529 ;
     color: white;
     display: flex;
     justify-content:space-evenly;
@@ -14,22 +14,41 @@
     z-index: 100;
     border-radius: 30px;
     box-shadow: 0 4px 10px rgba(221, 125, 221, 0.4); 
-    border: 3.5px dashed rgb(180, 177, 180); /* Dashed border */
+    border: 4px dotted rgb(180, 177, 180); /* Dashed border */
     position: absolute;
     margin-top: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden; 
+    
+    animation: blink-border 1.5s infinite; 
   }
  
  
+  @keyframes blink-border {
+    0% {
+        border-color: rgb(180, 177, 180); /* Initial color */
+    }
+    25% {
+        border-color: transparent; /* Change to white at 50% */
+    }
+    50% {
+        border-color: rgb(180, 177, 180); /* Return to initial color */
+    }
+    75% {
+      border-color: transparent; /* Change to white at 50% */
+  }
+  100% {
+      border-color: rgb(180, 177, 180); /* Return to initial color */
+  }
   
+
+}
 
   
   .button {
     background-color:#966209 ;
     color: white;
-    border:2.5px solid white;
+    border:2.5px dashed white;
     padding: 10px 20px;
     margin-left: 20px;
     cursor: pointer;
@@ -52,13 +71,13 @@
     display: inline-block;
     width: 40px;  /* Set the desired width */
     height: 40px; /* Set the desired height */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    transition: transform 0.3s, box-shadow 0.2s; /* Smooth transition for hover effects */
     border-radius: 50%; /* Make the container circular */
   }
 
   .social-media-links a:hover {
     transform: scale(1.2); /* Increase the size by 20% */
-    box-shadow: 0 0 15px 5px white; 
+   
 }
   
   .social-media-links img {
@@ -69,3 +88,25 @@
 
   }
   
+
+  .social-media-links a::after {
+    content: attr(title); /* Use the title attribute as the label text */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #6ec0db;
+    color: rgb(4, 37, 88);
+    padding: 8px 10px;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    font-size: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  
+  .social-media-links a:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }

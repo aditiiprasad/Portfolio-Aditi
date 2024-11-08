@@ -36,30 +36,30 @@ function Taskbar() {
 
       <div className="social-media-links">
         {/* LinkedIn */}
-        <a href="https://www.linkedin.com/in/aditiiprasad" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/aditiiprasad" target="_blank" rel="noopener noreferrer" title="LinkedIn">
         <img src={linkedinicon} alt="" />
         </a>
 
         {/* GitHub */}
-        <a href="https://github.com/aditiiprasad" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/aditiiprasad" target="_blank" rel="noopener noreferrer" title="Github">
         <img src={githubicon} alt="" />
         </a>
 
         {/* LeetCode */}
 
-        <a href="https://leetcode.com/aditiiprasad" target="_blank" rel="noopener noreferrer">
+        <a href="https://leetcode.com/aditiiprasad" target="_blank" rel="noopener noreferrer" title="leetcode">
         <img src={leetcode} alt="" />
         </a>
 
         {/* Email */}
         
-        <a href="mailto:aditi03prasad@gmail.com">
+        <a href="mailto:aditi03prasad@gmail.com" title="Email"> 
           <img src={mailicon} alt="" />
         </a>
 
         {/* instagram */}
         
-        <a href="https://instagram.com/aditiiprasad">
+        <a href="https://instagram.com/aditiiprasad" title="Instagram">
           <img src={instaicon} alt="" />
         </a>
 

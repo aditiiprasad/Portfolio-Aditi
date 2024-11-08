@@ -5,10 +5,16 @@ body {
   padding: 0;
   box-sizing: border-box;
    
-
+ 
 }
+
+
 *{
   font-family: 'Press Start 2P', cursive;
+  
+  cursor: url('./assets/curser.png') 16 16, auto;
+
+
 }
 
 
