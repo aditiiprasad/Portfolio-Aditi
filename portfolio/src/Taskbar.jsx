@@ -32,7 +32,7 @@ function Taskbar() {
 
   return (
     <header className="top-bar">
-      <button onClick={handleDownloadResume} className="button">Download Resume</button>
+     
 
       <div className="social-media-links">
         {/* LinkedIn */}
@@ -59,14 +59,14 @@ function Taskbar() {
 
         {/* instagram */}
         
-        <a href="https://instagram.com/aditiiprasad" title="Instagram">
+        {/* <a href="https://instagram.com/aditiiprasad" title="Instagram">
           <img src={instaicon} alt="" />
-        </a>
+        </a> */}
 
       </div>
 
-
-      <button onClick={Feedback} className="button">Send Feedback</button>
+      <button onClick={handleDownloadResume} className="button">Download Resume</button>
+      <button onClick={Feedback} className=" feedback">Send Feedback</button>
       
     </header>
   );
