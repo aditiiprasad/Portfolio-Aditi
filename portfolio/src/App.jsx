@@ -3,14 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Taskbar from './Taskbar'
+import Title from './Title'
+import Banner from './components/Banner'
+import About from './components/About'
 
 function App() {
   
 
   return (
     <>
-      <h1>Aditi's Portfolio</h1>
+      <Title/>
       <Taskbar />
+      <Banner/>
+      <About/>
     </>
   )
 }
