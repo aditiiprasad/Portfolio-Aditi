@@ -31,13 +31,13 @@
 }
 @keyframes rot {
     0% {
-        transform: rotate(-5deg); /* Initial rotation to the left */
+        transform: rotate(-2deg); /* Initial rotation to the left */
     }
     50% {
-        transform: rotate(5deg); /* Rotate to the right */
+        transform: rotate(2deg); /* Rotate to the right */
     }
     100% {
-        transform: rotate(-5deg); /* Rotate back to the left */
+        transform: rotate(-2deg); /* Rotate back to the left */
     }
 }
 
@@ -102,48 +102,38 @@
   /* Style the audio container */
 .audio-container {
     display: flex;
-    border: 5px dotted rgb(248, 248, 240);
+    border: 3px dashed rgb(248, 248, 240);
     align-items: center;
     margin-top: 20px;
     border-radius: 50%;
-    width: 40%;
-    height: 40px; /* Adjust the height */
+    
+    height: 17px; /* Adjust the height */
     border-radius:10px;
-    padding: 2px;
-    background-color: #b17b06;
-    animation: blinkBorder 1s infinite; /* Apply blinking effect */
-
+    box-shadow: 0 4px 10px rgba(221, 125, 221, 0.4); 
+    background-color: transparent;
+   
+    background-color: transparent;
   }
 
-  @keyframes blinkBorder {
-    0% {
-      border-color: #eaeae5;
-    }
-    50% {
-      border-color: transparent;
-    }
-    100% {
-      border-color: #f9edf4;
-    }
-  }
+  
   
   
   /* Style the audio player itself */
   .custom-audio {
     width: 100%;  /* Adjust the width */
-    height: 30px; /* Adjust the height */
+    height: 15px; /* Adjust the height */
     border-radius: 10px; /* Optional: round the corners */
-    background-color: #7b0b52; /* Optional: background color */
+    background-color:transparent; /* Optional: background color */
    
   }
   
   /* Optionally style the audio controls (for advanced styling, you'd need custom controls) */
   .custom-audio::-webkit-media-controls-panel {
-    background-color: #7b0b52; /* Change the background color of the controls panel */
+    background-color: rgb(6, 66, 126); /* Change the background color of the controls panel */
   }
   
   .custom-audio::-webkit-media-controls-play-button {
-    background-color: #e2a522; /* Change play button color */
+    background-color: rgb(255, 251, 251); /* Change play button color */
     border-radius: 50%;
   }
   

@@ -1,0 +1,40 @@
+.bus{
+   
+    height: 80px;
+    position: relative; 
+    
+
+}
+
+
+.busimg {
+    width: 100%; /* Full width of the parent container */
+    max-width: 300px; /* Maximum width for the image */
+    height: 130px; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image scales nicely */
+    border-radius: 10px; /* Optional: Rounded corners */
+    
+    animation: moveAndBounce 5s linear infinite;
+    
+}
+
+@keyframes moveAndBounce {
+    0% {
+        transform: translate(-100px); /* Start off-screen to the left */
+    }
+    50% {
+        transform: translate(100%); /* Move to center with slight upward bounce */
+    }
+    100% {
+        transform: translate(200%); /* Move off-screen to the right */
+    }
+}
+
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .busimg {
+        max-width: 200px; /* Adjust size for smaller screens */
+    }
+}
+

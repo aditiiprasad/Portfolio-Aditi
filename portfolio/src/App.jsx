@@ -6,7 +6,7 @@ import Taskbar from './Taskbar'
 import Title from './Title'
 import Banner from './components/Banner'
 import About from './components/About'
-
+import Edu from './components/Edu'
 function App() {
   
 
@@ -16,6 +16,7 @@ function App() {
       <Taskbar />
       <Banner/>
       <About/>
+      <Edu/>
     </>
   )
 }

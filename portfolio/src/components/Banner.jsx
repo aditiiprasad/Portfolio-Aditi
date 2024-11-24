@@ -36,7 +36,7 @@ const Banner = () => {
              <FaMapMarkerAlt className='iconloc'  />
              <span>Bangalore</span>
              </div>
-            <p className='intro'>Welcome! Let's embark on a journey through my Retro themed portfolio. Ready to collaborate?</p>
+            <p className='intro'>Welcome! Let's embark on a journey through this Retro themed portfolio. Ready to collaborate?</p>
             <div className="audio-container">
            <audio  className="custom-audio" 
            controls autoPlay loop >
