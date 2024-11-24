@@ -1,7 +1,11 @@
 .banner{
     display: flex;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
     flex-wrap: wrap;
+    padding: 15px;
+    border-radius: 20px;
+    width: 90%;
+
 }
 
 .photos{
@@ -27,7 +31,7 @@
     justify-content: center;
     padding-top: 10px;
     animation: rot 2s ease-in-out infinite;
-    border: 8px dotted rgb(220, 220, 130);
+    border: 8px dotted rgb(255, 255, 255);
 }
 @keyframes rot {
     0% {
@@ -76,7 +80,7 @@
     font-size: 1rem;
   }
   .name{
-    color: rgb(139, 203, 214);
+    color: rgb(103, 100, 104);
     font-size: 3rem;
     margin-top: 20px;
     text-shadow: 3px 3px 5px rgba(18, 142, 209, 0.7);
@@ -95,21 +99,21 @@
 
   .intro{
     color: rgb(172, 172, 172);
-    font-size: 1.5rem;
+    font-size: 20px;
     margin-top: 30px;
   }
 
   /* Style the audio container */
 .audio-container {
     display: flex;
-    border: 3px dashed rgb(248, 248, 240);
+    border: 5px dashed rgb(248, 248, 240);
     align-items: center;
-    margin-top: 20px;
+    margin-top: 25px;
     border-radius: 50%;
     
-    height: 17px; /* Adjust the height */
+    height: 20px; /* Adjust the height */
     border-radius:10px;
-    box-shadow: 0 4px 10px rgba(221, 125, 221, 0.4); 
+    box-shadow: 0 4px 10px rgba(2, 2, 2, 0.4); 
     background-color: transparent;
    
     background-color: transparent;
@@ -129,7 +133,7 @@
   
   /* Optionally style the audio controls (for advanced styling, you'd need custom controls) */
   .custom-audio::-webkit-media-controls-panel {
-    background-color: rgb(6, 66, 126); /* Change the background color of the controls panel */
+    background-color: rgb(46, 52, 57); /* Change the background color of the controls panel */
   }
   
   .custom-audio::-webkit-media-controls-play-button {

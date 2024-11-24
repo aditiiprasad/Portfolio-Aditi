@@ -1,40 +1,115 @@
-.bus{
-   
-    height: 80px;
-    position: relative; 
-    
-
+.bus {
+    height: 130px;
+    position: relative;
+    width: 100%; /* Make sure the container takes the full width */
+    overflow: hidden; /* Prevent the image from overflowing out of its container */
 }
 
-
 .busimg {
-    width: 100%; /* Full width of the parent container */
-    max-width: 300px; /* Maximum width for the image */
+    /* Full width of the parent container */
     height: 130px; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image scales nicely */
     border-radius: 10px; /* Optional: Rounded corners */
-    
-    animation: moveAndBounce 5s linear infinite;
-    
+    position: absolute; /* Positioning the image absolutely within the container */
+    animation: moveAndBounce 5s linear infinite; /* Apply animation */
 }
 
+/* Keyframes for moving and bouncing the image */
 @keyframes moveAndBounce {
     0% {
-        transform: translate(-100px); /* Start off-screen to the left */
+        transform: translateX(0%); /* Start off-screen to the left */
     }
     50% {
-        transform: translate(100%); /* Move to center with slight upward bounce */
+        transform: translateX(100%); /* Center the image horizontally */
     }
     100% {
-        transform: translate(200%); /* Move off-screen to the right */
+        transform: translateX(200%); /* Move off-screen to the right */
     }
 }
+
 
 
 /* Responsive styling */
 @media screen and (max-width: 768px) {
     .busimg {
-        max-width: 200px; /* Adjust size for smaller screens */
+        max-width: 400px; /* Adjust size for smaller screens */
     }
 }
 
+/* Bitinfo section */
+.bitinfo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px; /* Optional: space between bus and bitinfo */
+}
+
+.bit {
+    height: 150px;
+    border: 2px solid gray;
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the content */
+    text-align:end; /* Center the text horizontally */
+    align-items: center;
+    background-color: rgba(12, 0, 0, 0.6);
+    border-radius: 20px;
+    border: 4px dashed wheat;
+    width: 50%;
+
+}
+
+.bit p {
+    margin: 5px 0; /* Optional margin for spacing between paragraphs */
+}
+
+.bit .college-name {
+    font-size: 16px; /* Larger font size for the college name */
+    font-weight: bold;
+    color: #e7e8a9; /* Green color for college name */
+}
+
+.bit .year {
+    font-size: 13px; /* Smaller font size for the year */
+    color: #dc9f9b; /* Red color for the year */
+}
+
+.bit .degree {
+    font-size: 14px; /* Bigger font size for degree */
+    color: #9bc3e3; /* Blue color for the degree */
+}
+
+.bitimg {
+    height: 150px;
+    width: 200px; /* Set a fixed size for the container */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Optional padding to fit image nicely */
+    
+
+}
+
+.bitimg img {
+    width: 100%;  /* Make image fill container */
+    height: 100%; /* Ensure image doesn't overflow */
+    object-fit: contain; /* Adjust image to fit inside the container */
+    animation: zoomInOut 5s ease-in-out infinite; /* Add the zoom animation */
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1.5); /* Start at normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Zoom in */
+    }
+    100% {
+        transform: scale(1.5); /* Zoom out to normal size */
+    }
+
+   
+}
