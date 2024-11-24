@@ -7,6 +7,7 @@ import Title from './Title'
 import Banner from './components/Banner'
 import About from './components/About'
 import Edu from './components/Edu'
+import Skill from './components/Skill'
 function App() {
   
 
@@ -17,6 +18,7 @@ function App() {
       <Banner/>
       <About/>
       <Edu/>
+      <Skill/>
     </>
   )
 }

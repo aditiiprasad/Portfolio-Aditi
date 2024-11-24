@@ -6,7 +6,7 @@ import kv from './images/kv.png'
 
 const Edu = () => {
   return (
-    <div>
+    <div className='edu'>
       <div className='bus'>
       <img src={busimg} className="busimg" alt="edu" />
      

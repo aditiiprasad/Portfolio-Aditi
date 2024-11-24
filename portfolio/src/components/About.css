@@ -14,7 +14,7 @@
     width: 20%; /* 30% of container for image */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image fits nicely */
-   
+    
     animation: moveHorizontally 3s linear infinite;
   
   }
@@ -28,13 +28,13 @@
         transform: translateX(0) scale(1); /* Start position with normal size */
     }
     25% {
-        transform: translateX(10px) scale(1.2); /* Slight zoom in */
+        transform: translateX(10px) scale(1.1); /* Slight zoom in */
     }
     50% {
-        transform: translateX(20px) scale(1.4); /* Move to the right, normal size */
+        transform: translateX(20px) scale(1.2); /* Move to the right, normal size */
     }
     75% {
-        transform: translateX(10px) scale(1.2); /* Slight zoom out */
+        transform: translateX(10px) scale(1.1); /* Slight zoom out */
     }
     100% {
         transform: translateX(0) scale(1); /* Return to start, normal size */
@@ -62,7 +62,7 @@
   /* Responsive layout for smaller screens */
   @media screen and (max-width: 768px) {
     .abtimage {
-      width: 40%; /* Increase width slightly for smaller screens */
+      width: 30%; /* Increase width slightly for smaller screens */
     }
   
     .abtcontent {
