@@ -1,0 +1,121 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    background:transparent;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-image {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px; /* Limit the max width */
+    border: 2px solid red;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain; /* Ensures proper aspect ratio */
+  }
+  
+  .project-details {
+    flex: 2;
+    margin-left: 20px;
+    border: 2px solid;
+    color: #ddd;
+  }
+  
+  .project-details h3 {
+    margin: 0 0 10px;
+  }
+  
+  .project-details p {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .project {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .project-details {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  
+
+
+  .glitch {
+    position: relative;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: glitch-animation 2s infinite;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #ff0000; /* Red glitch */
+    background: transparent;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch-effect 2s infinite linear alternate-reverse;
+  }
+  
+  .glitch::after {
+    color: #00ffcc; /* Cyan glitch */
+    animation: glitch-effect 2s infinite linear alternate;
+  }
+  
+  @keyframes glitch-effect {
+    0% {
+      clip: rect(0, 900px, 0, 0);
+      transform: translate(-2px, -2px);
+    }
+    25% {
+      clip: rect(10px, 900px, 60px, 0);
+      transform: translate(2px, 2px);
+    }
+    50% {
+      clip: rect(20px, 900px, 40px, 0);
+      transform: translate(-1px, 0);
+    }
+    75% {
+      clip: rect(15px, 900px, 70px, 0);
+      transform: translate(1px, -1px);
+    }
+    100% {
+      clip: rect(0, 900px, 0, 0);
+      transform: translate(0, 2px);
+    }
+  }
+  
+  @keyframes glitch-animation {
+    0%, 100% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translate(-2px, 2px);
+    }
+  }

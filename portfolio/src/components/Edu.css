@@ -45,8 +45,8 @@
 }
 
 .bit {
-    height: 150px;
-    border: 2px solid gray;
+    
+    
     color: aliceblue;
     padding: 20px;
     display: flex;
@@ -56,24 +56,26 @@
     align-items: center;
     background-color: rgba(12, 0, 0, 0.6);
     border-radius: 20px;
-    border: 4px dashed wheat;
+    border: 3px dashed wheat;
     width: 50%;
 
 }
 
 .bit p {
-    margin: 5px 0; /* Optional margin for spacing between paragraphs */
+    margin-bottom: 20px ; /* Optional margin for spacing between paragraphs */
+
 }
 
 .bit .college-name {
     font-size: 16px; /* Larger font size for the college name */
     font-weight: bold;
     color: #e7e8a9; /* Green color for college name */
+    margin-top: 10px;
 }
 
 .bit .year {
     font-size: 13px; /* Smaller font size for the year */
-    color: #dc9f9b; /* Red color for the year */
+    color: #dbdc9b; /* Red color for the year */
 }
 
 .bit .degree {
@@ -97,7 +99,7 @@
     width: 100%;  /* Make image fill container */
     height: 100%; /* Ensure image doesn't overflow */
     object-fit: contain; /* Adjust image to fit inside the container */
-    animation: zoomInOut 5s ease-in-out infinite; /* Add the zoom animation */
+    /* animation: zoomInOut 5s ease-in-out infinite; Add the zoom animation */
 }
 
 @keyframes zoomInOut {
@@ -116,4 +118,15 @@
 
 .edu{
     margin-bottom: 50px;
+}
+
+.bit:hover {
+    transform: scale(1.2); /* Scale the container */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect for bit image */
+.bitimg img:hover {
+    transform: scale(1.2); /* Scale the image */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
 }

@@ -1,0 +1,58 @@
+/* Main Container */
+.paint-canvas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+ 
+}
+
+h4 {
+  color: #e8d7d7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Controls */
+.paint-canvas-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.paint-canvas-color-picker {
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.paint-canvas-line-width-slider {
+  width: 100px;
+}
+
+.paint-canvas-clear-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.paint-canvas-clear-button:hover {
+  background-color: #45a049;
+}
+
+/* Canvas */
+.paint-canvas {
+  border: 2px solid #ddd;
+  cursor: crosshair;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

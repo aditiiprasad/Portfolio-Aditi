@@ -2,7 +2,7 @@
 .abtcontainer {
     display: flex;
     align-items: center; /* Align items vertically in the center */
-    justify-content: space-between; /* Add space between items */
+    justify-content: center; /* Add space between items */
   
     padding: 10px;
     width: 100%; /* Full width of container */
@@ -14,59 +14,63 @@
     width: 20%; /* 30% of container for image */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image fits nicely */
-    
+     /* Pull the image slightly into the content section */
+    z-index: 1; /* Ensure it overlaps correctly */
     animation: moveHorizontally 3s linear infinite;
   
   }
 
 
+
+/* Content section */
+.abtcontent {
+  width: 80%; /* 80% of container for content */
+  padding-left: 20px; /* Optional padding for text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left; /* Align text to the left */
+  font-size: 15px;
+  color: rgb(184, 200, 214);
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative; /* Enable overlap with image */
+}
   
 
 
 @keyframes moveHorizontally {
     0% {
-        transform: translateX(0) scale(1); /* Start position with normal size */
+        transform:  scale(0.7); /* Start position with normal size */
     }
     25% {
-        transform: translateX(10px) scale(1.1); /* Slight zoom in */
+        transform:  scale(1); /* Slight zoom in */
     }
     50% {
-        transform: translateX(20px) scale(1.2); /* Move to the right, normal size */
+        transform: scale(1.2); /* Move to the right, normal size */
     }
     75% {
-        transform: translateX(10px) scale(1.1); /* Slight zoom out */
+        transform: scale(1); /* Slight zoom out */
     }
     100% {
-        transform: translateX(0) scale(1); /* Return to start, normal size */
+        transform:  scale(0.7); /* Return to start, normal size */
     }
 }
   
   /* Content section */
-  .abtcontent {
-    width: 80%; /* 60% of container for content */
-    padding-left: 4px; /* Optional padding */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left; /* Align text to the left */
-    font-size: 15px;
-    color: rgb(184, 200, 214);
-    background-color: black;
-    border: 1px solid gray;
-    border-radius: 20px;
-    padding: 20px;
-
-  }
+ 
 
 
   /* Responsive layout for smaller screens */
   @media screen and (max-width: 768px) {
     .abtimage {
-      width: 30%; /* Increase width slightly for smaller screens */
+      width: 20%; /* Increase width slightly for smaller screens */
     }
   
     .abtcontent {
-      width: 55%; /* Adjust content width */
+      width: 95%; /* Adjust content width */
       font-size: 14px; /* Reduce text size for readability */
     }
   }

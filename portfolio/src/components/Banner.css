@@ -106,12 +106,12 @@
   /* Style the audio container */
 .audio-container {
     display: flex;
-    border: 5px dashed rgb(248, 248, 240);
+    border: 5px dashed rgb(194, 194, 159);
     align-items: center;
     margin-top: 25px;
     border-radius: 50%;
     
-    height: 20px; /* Adjust the height */
+    height: 30px; /* Adjust the height */
     border-radius:10px;
     box-shadow: 0 4px 10px rgba(2, 2, 2, 0.4); 
     background-color: transparent;
@@ -141,4 +141,6 @@
     border-radius: 50%;
   }
   
- 
+ .type{
+  margin-top: 30px;
+ }

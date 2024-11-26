@@ -7,7 +7,12 @@ import Title from './Title'
 import Banner from './components/Banner'
 import About from './components/About'
 import Edu from './components/Edu'
+
 import Skill from './components/Skill'
+import Projects from './components/Projects'
+import Pprojects from './components/Pprojects'
+import PixelArt from './components/PaintCanvas'
+
 function App() {
   
 
@@ -18,7 +23,10 @@ function App() {
       <Banner/>
       <About/>
       <Edu/>
+      <PixelArt/>
       <Skill/>
+      <Projects/>
+      <Pprojects/>
     </>
   )
 }

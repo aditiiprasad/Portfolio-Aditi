@@ -22,7 +22,7 @@ const Banner = () => {
      </div>
       <div className='info'>
 
-            <h6 className='type'>
+            <h5 className='type'>
               <ReactTypingEffect
                 text={["Programmer", "Aspiring Software Developer", "MERN Developer"]}
                 speed={100}
@@ -30,7 +30,7 @@ const Banner = () => {
                 eraseDelay={2000}
                 typingDelay={500}
               />
-            </h6>
+            </h5>
             <h4 className='name'>Aditi</h4>
             <div className='bang' style={{ display: "flex", alignItems: "center", fontSize: "18px" }}>
              <FaMapMarkerAlt className='iconloc'  />
