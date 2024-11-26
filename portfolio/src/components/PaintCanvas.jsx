@@ -70,7 +70,7 @@ const PaintCanvas = () => {
   return (
     <div className="paint-canvas-container">
       
-  <h4>Take a Break, Draw something!</h4>
+  <h4 className="paint">Take a Break, Draw something!</h4>
   
       
 
@@ -102,6 +102,9 @@ const PaintCanvas = () => {
         onMouseUp={stopDrawing}
         onMouseMove={draw}
         onMouseLeave={stopDrawing}
+        onTouchStart={startDrawing}  // Added touch events
+        onTouchEnd={stopDrawing}
+        onTouchMove={draw}
       />
     </div>
   );

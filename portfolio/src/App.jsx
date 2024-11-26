@@ -12,6 +12,8 @@ import Skill from './components/Skill'
 import Projects from './components/Projects'
 import Pprojects from './components/Pprojects'
 import PixelArt from './components/PaintCanvas'
+import Footer from './Footer'
+
 
 function App() {
   
@@ -23,10 +25,12 @@ function App() {
       <Banner/>
       <About/>
       <Edu/>
-      <PixelArt/>
+     
       <Skill/>
+      <PixelArt/>
       <Projects/>
       <Pprojects/>
+      <Footer/>
     </>
   )
 }
