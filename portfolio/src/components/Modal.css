@@ -11,7 +11,7 @@
   }
   
   .modal-content {
-    background: white;
+    background: rgb(35, 35, 35);
     padding: 20px;
     border-radius: 10px;
     width: 90%;
@@ -28,8 +28,9 @@
     color: white;
     border: none;
     border-radius: 50%;
-    width: 30px;
     height: 30px;
+    width: 30px;
+
     font-size: 16px;
     cursor: pointer;
   }
@@ -38,11 +39,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    
   }
   
   .image-grid img {
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    
+    background-color: black;
   }
-  
+  .image-grid img:hover {
+   border: 2px solid grey;
+  }

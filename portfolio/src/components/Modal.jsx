@@ -12,15 +12,30 @@ const Modal = ({ onClose }) => {
     <div className="modal-overlay">
       <div className="modal-content">
         <button className="close-btn" onClick={onClose}>
-          Close
+          X
         </button>
         <div className="image-grid">
-          <img src={Aclone} alt="Practice Project 1" />
-          <img src={gamehub} alt="Practice Project 2" />
-          <img src={reactcuco} alt="Practice Project 3" />
-          <img src={password} alt="Practice Project 4" />
-          <img src={cuco} alt="Practice Project 5" />
-          <img src={bgchanger} alt="Practice Project 6" />
+          <a href="https://aditiiprasad.github.io/GameHub/" target="_blank" rel="noopener noreferrer">
+            <img src={gamehub} alt="Practice Project 2" />
+          </a>
+          <a href="https://aditiiprasad.github.io/CuCo/" target="_blank" rel="noopener noreferrer">
+            <img src={cuco} alt="Practice Project 5" />
+          </a>
+          <a href="https://passwordgenerator-weld-one.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={password} alt="Practice Project 4" />
+          </a>
+          <a href="https://aditiiprasad.github.io/Amazon-clone/" target="_blank" rel="noopener noreferrer">
+            <img src={Aclone} alt="Practice Project 1" />
+          </a>
+         
+          <a href="https://github.com/aditiiprasad/React-Practice-Projects/tree/main/04-currency-convertor" target="_blank" rel="noopener noreferrer">
+            <img src={reactcuco} alt="Practice Project 3" />
+          </a>
+          
+         
+          <a href="https://react-practice-projects-phi.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <img src={bgchanger} alt="Practice Project 6" />
+          </a>
         </div>
       </div>
     </div>

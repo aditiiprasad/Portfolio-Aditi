@@ -1,6 +1,7 @@
 .projects-container {
     text-align: center;
     margin: 20px;
+   
   }
   
   .view-projects-btn {
@@ -9,8 +10,30 @@
     background: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
     cursor: pointer;
+    animation: colorChange 3s infinite;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background: rgb(249, 252, 255);
+      color: black;
+    }
+    33% {
+      background: rgb(58, 57, 58);
+      color: rgb(255, 255, 255);
+    }
+    66% {
+      background: rgb(238, 242, 239);
+      color: black;
+    }
+    100%{
+      background: rgb(48, 54, 60);  
+      color: rgb(232, 225, 239);
+    }
   }
   
   .view-projects-btn:hover {

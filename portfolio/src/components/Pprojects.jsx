@@ -13,7 +13,7 @@ const Pprojects = () => {
     <div className="projects-container">
       
       <button className="view-projects-btn" onClick={handleModalToggle}>
-        View Practice Projects
+        Click for Practice Projects
       </button>
 
       {showModal && <Modal onClose={handleModalToggle} />}

@@ -3,6 +3,7 @@ import './Edu.css';
 import busimg from './images/edu.png'
 import bit from './images/bit.png'
 import kv from './images/kv.png'
+import revbus from './images/revbus.png'
 
 const Edu = () => {
   return (
@@ -31,6 +32,10 @@ const Edu = () => {
    
     <p className="degree">PCMB</p>
       </div>
+      </div>
+      <div className='bus'>
+      <img src={revbus} className="revbusimg" alt="edu" />
+     
       </div>
    </div>
   )

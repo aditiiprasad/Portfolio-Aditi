@@ -13,20 +13,38 @@
     position: absolute; /* Positioning the image absolutely within the container */
     animation: moveAndBounce 5s linear infinite; /* Apply animation */
 }
-
+.revbusimg{
+   /* Full width of the parent container */
+   height: 115px; /* Maintain aspect ratio */
+   object-fit: cover; /* Ensure the image scales nicely */
+   border-radius: 10px; /* Optional: Rounded corners */
+   position: absolute; /* Positioning the image absolutely within the container */
+   animation: revmoveAndBounce 5s linear infinite; /* Apply animation */ 
+}
 /* Keyframes for moving and bouncing the image */
 @keyframes moveAndBounce {
     0% {
         transform: translateX(0%); /* Start off-screen to the left */
     }
     50% {
-        transform: translateX(75%); /* Center the image horizontally */
+        transform: translateX(50%); /* Center the image horizontally */
     }
     100% {
-        transform: translateX(150%); /* Move off-screen to the right */
+        transform: translateX(100%); /* Move off-screen to the right */
     }
 }
 
+@keyframes revmoveAndBounce {
+    0% {
+        transform: translateX(50%); /* Start off-screen to the left */
+    }
+    50% {
+        transform: translateX(0); /* Center the image horizontally */
+    }
+    100% {
+        transform: translateX(-50%); /* Move off-screen to the right */
+    }
+}
 
 
 /* Responsive styling */

@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     padding-top: 10px;
-    animation: rot 2s ease-in-out infinite;
+    /* animation: rot 2s ease-in-out infinite; */
     border: 8px dotted rgb(255, 255, 255);
 }
 @keyframes rot {
@@ -75,12 +75,12 @@
 
 
   .type{
-    color: #f2e2cd;
+    color: #c9b1cf;
     
     font-size: 1rem;
   }
   .name{
-    color: rgb(103, 100, 104);
+    color: rgb(142, 117, 151);
     font-size: 3rem;
     margin-top: 20px;
     text-shadow: 3px 3px 5px rgba(18, 142, 209, 0.7);
@@ -99,7 +99,7 @@
 
   .intro{
     color: rgb(172, 172, 172);
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 30px;
   }
 

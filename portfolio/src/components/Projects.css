@@ -7,6 +7,7 @@
   
   .project {
     display: flex;
+    
     flex-wrap: wrap;
     background:transparent;
     border: 1px solid #ddd;
@@ -19,7 +20,7 @@
     flex: 1;
     min-width: 150px;
     max-width: 250px; /* Limit the max width */
-    border: 2px solid red;
+   
   }
   
   .project-image img {
@@ -32,16 +33,17 @@
   .project-details {
     flex: 2;
     margin-left: 20px;
-    border: 2px solid;
+   
     color: #ddd;
+    text-align: left;
+    font-size: 0.8rem;
   }
   
-  .project-details h3 {
-    margin: 0 0 10px;
-  }
-  
+ 
   .project-details p {
-    margin: 0;
+    margin: 10px;
+    font-weight: lighter;
+    color: rgb(111, 111, 111);
   }
   
   @media (max-width: 768px) {
@@ -58,6 +60,44 @@
   
 
 
+
+
+  .project-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px; /* Space between buttons */
+    
+    
+    
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #000000;
+    background-color: #68686a; /* Button background color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    background-color: #000000; /* Darker blue on hover */
+    color: #68686a;
+    border: 2px solid gray;
+  }
+  
+
+h5{
+  font-size: larger;
+}
+
+h5:hover{
+  color: #68686a;
+}
+
   .glitch {
     position: relative;
     font-size: 3rem;
@@ -68,6 +108,7 @@
     animation: glitch-animation 2s infinite;
     overflow: hidden;
     text-align: center;
+    margin-top: 20px;
   }
   
   .glitch::before,
@@ -77,14 +118,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    color: #ff0000; /* Red glitch */
+    color: #970808; /* Red glitch */
     background: transparent;
     clip: rect(0, 900px, 0, 0);
     animation: glitch-effect 2s infinite linear alternate-reverse;
   }
   
   .glitch::after {
-    color: #00ffcc; /* Cyan glitch */
+    color: #0cdcdc; /* Cyan glitch */
     animation: glitch-effect 2s infinite linear alternate;
   }
   
@@ -119,3 +160,5 @@
       transform: translate(-2px, 2px);
     }
   }
+
+  

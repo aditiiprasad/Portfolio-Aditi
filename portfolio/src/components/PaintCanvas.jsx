@@ -104,6 +104,7 @@ const PaintCanvas = () => {
         onTouchEnd={stopDrawing}
         onTouchMove={draw}
       />
+      <div className="section"></div>
     </div>
   );
 };

@@ -47,6 +47,7 @@
 
 .paint-canvas-clear-button:hover {
   background-color: #45a049;
+  color: hotpink;
 }
 
 /* Canvas */
@@ -55,4 +56,10 @@
   cursor: crosshair;
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section{
+  border-bottom: 7px dashed rgb(145, 231, 135);
+  width: 100%;
+  height: 20px;
 }
