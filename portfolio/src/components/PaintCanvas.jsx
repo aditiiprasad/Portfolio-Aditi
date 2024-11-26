@@ -95,8 +95,7 @@ const PaintCanvas = () => {
       <canvas
         ref={canvasRef}
         className="paint-canvas"
-        width="400"
-        height="200"
+        
         onMouseDown={startDrawing}
         onMouseUp={stopDrawing}
         onMouseMove={draw}

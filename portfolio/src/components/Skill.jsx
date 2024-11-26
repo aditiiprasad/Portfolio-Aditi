@@ -10,6 +10,16 @@ import html from './images/html.png'
 import css from './images/css.png'
 import node from './images/node.png'
 import react from './images/react.png'
+import bootstrap from './images/Bootstrap.png'
+import tailwind from './images/tailwind.png'
+import express from './images/express.png'
+import mongo from './images/mongo.png'
+import sql from './images/sql.png'
+import git from './images/git.png'
+import github from './images/github.png'
+import pm from './images/postman.png'
+import clouds from './images/cloud.mp4'
+
 
 
 const Skill = () => {
@@ -22,35 +32,47 @@ const Skill = () => {
       <img src={s2} className="skill-image s2" alt="Skill 2" />
 
       </div>
-      
-      <div className="languages-container">
-        Languages
-       <div className='jjc'>
+     <div className='centre'>
+      <div className='skills'>
+  <video className="skills-bg-video" autoPlay muted loop>
+    <source src={clouds} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div className="skills-content">
+    <div className="languages-container">
+      Languages
+      <div className='jjc'>
         <img src={java} alt="Java" />
         <img src={js} alt="JavaScript" />
         <img src={c} alt="C" />
-        </div>
       </div>
-      <div className="languages-container">
-        Full Stack Development
-       <div className='jjc'>
-        <img src={html} alt="Java" />
-        <img src={css} alt="JavaScript" />
-        <img src={react} alt="C" />
-        <img src={node} alt="C" />
-        </div>
+    </div>
+    <div className="languages-container">
+      Full Stack Development
+      <div className='jjc'>
+        <img src={html} alt="HTML" />
+        <img src={css} alt="CSS" />
+        <img src={bootstrap} alt="Bootstrap" />
+        <img src={tailwind} alt="Tailwind" />
+        <img src={react} alt="React" />
+        <img src={node} alt="Node.js" />
+        <img src={express} alt="Express" />
+        <img src={mongo} alt="MongoDB" />
+        <img src={sql} alt="SQL" />
       </div>
-      <div className="languages-container">
-       Tools
-       <div className='jjc'>
-        <img src={java} alt="Java" />
-        <img src={js} alt="JavaScript" />
-        <img src={c} alt="C" />
-        </div>
+    </div>
+    <div className="languages-container">
+      Tools
+      <div className='jjc'>
+        <img src={git} alt="Git" />
+        <img src={github} alt="GitHub" />
+        <img src={pm} alt="Postman" />
       </div>
+    </div>
+  </div>
+</div>
 
-
-      
+</div>  
      
     </div>
   )

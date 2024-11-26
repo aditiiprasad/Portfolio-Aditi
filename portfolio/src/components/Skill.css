@@ -1,76 +1,97 @@
 .skill {
-    position: relative;
-    width: 100%;
-    
-    margin-top: 30px;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  
 }
-  
-  .skills-container {
-    display: flex;
-    align-items: center; /* Vertically align images */
-    justify-content: center; /* Center align images horizontally */
-    gap: 20px; /* Add space between images */
-    flex-wrap: nowrap; /* Prevent wrapping to a new line */
-    overflow-x: auto; /* Allow horizontal scrolling if necessary */
-  }
-  
-  .skill-image {
-    flex: 1; /* Allow images to share available space equally */
-    max-width: 20%; /* Each image takes up a percentage of the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the images fit nicely */
-  }
-  
-  /* Style for individual images (if needed) */
-  .s1 {
-    /* Custom styles for s1 */
-  }
-  
-  .s2 {
-    /* Custom styles for s2 */
-  }
-  
-  .skill-main {
-    max-width: 30%; /* Slightly larger for the main image */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Responsive layout for smaller screens */
-  @media screen and (max-width: 768px) {
-    .skill-image {
-      max-width: 40%; /* Adjust image size for smaller screens */
-    }
-  }
-  
 
-  .languages-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between; /* Align text on the right and images on the left */
-    align-items: center;
-    text-align: left;
-    color: rgb(123, 187, 242);
-   
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 20px;
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.skill-image {
+  flex: 1;
+  max-width: 20%;
+  height: auto;
+  object-fit: contain;
+  
+}
+
+.skill-main {
+  max-width: 30%;
+  height: auto;
+}
+
+.languages-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  color: rgb(254, 254, 254);
+  padding: 10px 20px;
+  font-size: 20px;
 }
 
 .jjc {
-    display: flex; /* Keep images in a line */
-    gap: 10px; /* Space between images */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  gap: 10px;
+  justify-content: flex-start; /* Align items to the left */
 }
 
 .jjc img {
-    width: 50px;; /* Size of the icons */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Smooth animation on hover */
-   
-
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .jjc img:hover {
-    transform: translateY(-10px); /* Move image upward on hover */
+  transform: translateY(-10px);
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .skill-image {
+      max-width: 40%;
+  }
+}
+
+.centre{
+  display: flex;
+  justify-content: center;
+}
+.skills {
+  position: relative;
+  width: 95%;
+  height: auto; /* Adjust as needed */
+  margin-top: 30px;
+  overflow: hidden; /* Ensure the video stays within the section */
+  border-radius: 30px;
+  border: 2px solid gray;
+}
+
+.skills-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire background */
+  z-index: -1; /* Send the video to the back */
+}
+
+.skills-content {
+  position: relative;
+  z-index: 1; /* Place content above the video */
+  padding: 20px;
+  color: white; /* Ensure text is visible over the video */
 }
