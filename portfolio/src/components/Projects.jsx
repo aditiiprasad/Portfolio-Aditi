@@ -8,8 +8,8 @@ import gupshup from './images/gupshup.png';
 const Projects = () => {
   return (
     <div>
-      <div className="glitch" data-text="Project">
-        Project
+      <div className="glitch" data-text="Projects">
+        Projects
       </div>
       <div className="projects-container">
          {/* Project 3 */}

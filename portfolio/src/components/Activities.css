@@ -1,0 +1,77 @@
+.activities {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .activities-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#c0e68c;
+  }
+  
+  .activities-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .activities-image {
+    flex: 0 0 auto;
+  }
+  
+  .circle-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    box-shadow: 0 6px 15px rgba(255, 254, 254, 0.765); 
+    transition: transform 2s ease; /* Smooth flipping animation */
+    transform-style: preserve-3d; /* Ensure 3D effect */
+  }
+  .circle-image:hover {
+    transform: rotateY(360deg); /* Flip effect */
+  }
+  
+  .activities-content {
+    max-width: 800px;
+    text-align: left;
+    border: 1px solid wheat;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .activities-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #acd8c4;
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Smooth transition */
+  }
+  
+  .activities-description {
+    font-size: 0.7rem;
+    color: #d2e2bd;
+    line-height: 1.5;
+    transition: color 0.3s ease; /* Smooth transition */
+  }
+  .act-year{
+    color: #c0e68c;
+    transition: color 0.3s ease; /* Smooth transition */
+  }
+
+  /* Hover effects */
+.activities-title:hover {
+    color: #6fd388; /* Slightly darker shade */
+  }
+  
+  .activities-description:hover {
+    color: #82dc51; /* Slightly darker shade */
+  }
+  
+  .act-year:hover {
+    color: #789053; /* Slightly darker shade */
+  }

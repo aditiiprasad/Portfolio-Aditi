@@ -50,7 +50,7 @@
 .photo{
     background-image: url("images/three.jpg");
     background-size: cover;
-    background-color: aqua;
+    background-color: rgba(19, 192, 192, 0.509);
     width: 200px;
     height: 250px;
 }
@@ -75,19 +75,19 @@
 
 
   .type{
-    color: #c9b1cf;
+    color: #b18b52;
     
     font-size: 1rem;
   }
   .name{
-    color: rgb(142, 117, 151);
+    color: rgb(218, 199, 184);
     font-size: 3rem;
     margin-top: 20px;
-    text-shadow: 3px 3px 5px rgba(18, 142, 209, 0.7);
+    text-shadow: 3px 3px 5px rgba(189, 151, 12, 0.7);
   }
 
   .bang{
-    color: rgb(241, 215, 209);
+    color: rgb(214, 188, 150);
     margin-top: 10px;
   }
   .iconloc{
@@ -98,7 +98,7 @@
   }
 
   .intro{
-    color: rgb(172, 172, 172);
+    color: rgb(123, 117, 96);
     font-size: 17px;
     margin-top: 30px;
   }

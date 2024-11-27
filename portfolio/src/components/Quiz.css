@@ -1,0 +1,105 @@
+.bod {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .quiz {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed rgb(224, 172, 198);
+    width: 90%;
+    border-radius: 20px;
+    position: relative; /* For positioning the fire icon above content */
+  }
+  
+  .quiz-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .quiz-icon {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .quiz-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: hotpink;
+  }
+  
+  .question-container {
+    margin-top: 20px;
+  }
+  
+  .question-text {
+    font-size: 1.25rem;
+    color: #e1b6db;
+  }
+  
+  .options-container {
+    margin-top: 20px;
+  }
+  
+  .option-button {
+    background-color: rgb(234, 222, 228);
+    color: rgb(206, 13, 177);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid hotpink;
+  }
+  
+  .option-button:hover {
+    background-color: transparent;
+  }
+  
+  .option-button:focus {
+    outline: none;
+  }
+  
+  /* Fire Icon Styling */
+  .fire-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* To make sure fire is on top of the content */
+    animation: fireAnimation 1s ease-in-out;
+  }
+  
+  .fire-icon {
+    width: 200px;
+    height: 200px;
+  }
+  
+  @keyframes fireAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1.2);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-50%) scale(1);
+    }
+  }
+  
+  /* Thank You Message Styling */
+  .thank-you-message {
+    font-size: 0.8rem;
+    color: rgb(23, 215, 6);
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  

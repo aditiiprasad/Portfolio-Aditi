@@ -1,6 +1,6 @@
 .foot {
     background-image: url(./assets/footer.jpeg); /* Ensure the path is correct */
-    background-size: contain; /* Adjust size to fit */
+    background-size: cover; /* Adjust size to fit */
     height: 300px;
     width: 100%;
   }

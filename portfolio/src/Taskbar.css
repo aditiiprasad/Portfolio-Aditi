@@ -2,7 +2,7 @@
 
 /* General Styles */
 .top-bar {
-  background-color: #0b0220;
+  background-color: #03031b;
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -11,8 +11,8 @@
   
   width: 85%;
   border-radius: 30px;
-  box-shadow: 0 4px 10px rgba(221, 125, 221, 0.4); 
-  border: 1px solid rgb(180, 177, 180); /* Dashed border */
+  box-shadow: 0 4px 10px rgba(205, 205, 144, 0.639); 
+  border: 3px dotted rgb(180, 177, 180); /* Dashed border */
   position: relative;
   
   left: 50%;
@@ -56,7 +56,7 @@
 
 .button {
   background-color: #b87114;
-  color: rgb(8, 0, 38);
+  color: rgb(255, 255, 255);
   border: 2.5px dashed white;
   padding: 10px 20px;
   margin-left: 20px;
@@ -101,8 +101,8 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #fdfdfd;
-  color: rgb(49, 51, 54);
+  background-color: #20b3e9;
+  color: rgb(2, 26, 57);
   padding: 8px 10px;
   margin-top: 0.5rem;
   border-radius: 5px;

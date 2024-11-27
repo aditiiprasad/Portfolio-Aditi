@@ -17,6 +17,8 @@ const Pprojects = () => {
       </button>
 
       {showModal && <Modal onClose={handleModalToggle} />}
+
+      <div className="section"></div>
     </div>
   );
 };
