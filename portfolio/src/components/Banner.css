@@ -60,7 +60,7 @@ body {
     background-color: rgba(19, 192, 192, 0.509);
     width: 200px;
     height: 250px;
-    
+
 }
 
 .info{
@@ -111,7 +111,7 @@ body {
   }
 
   .intro{
-    color: rgb(139, 192, 225);
+    color: rgb(234, 234, 202);
     font-size: 15px;
     margin-top: 30px;
   }

@@ -25,7 +25,7 @@ function Taskbar() {
   // Handler for downloading resume
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/path-to-your-resume.pdf';  // Update the link to your resume file
+    link.href = '/assets/resume.pdf';  // Update the link to your resume file
     link.download = 'resume.pdf';
     link.click();
   };

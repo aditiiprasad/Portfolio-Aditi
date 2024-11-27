@@ -16,10 +16,10 @@ const Footer = () => {
         <div className="footer-content">
           <h2 className="footer-heading">Thank you for visiting!</h2>
           <div className="footer-buttons">
-            <a href="https://www.linkedin.com/" target="_blank" className="footer-button">LinkedIn</a>
-            <a href="https://github.com/" target="_blank" className="footer-button">GitHub</a>
-            <a href="https://leetcode.com/" target="_blank" className="footer-button">LeetCode</a>
-            <a href="mailto:your-email@gmail.com" className="footer-button">Gmail</a>
+            <a href="https://www.linkedin.com/in/aditiiprasad" target="_blank" className="footer-button">LinkedIn</a>
+            <a href="https://github.com/aditiiprasad" target="_blank" className="footer-button">GitHub</a>
+            <a href="https://leetcode.com/aditiiprasad" target="_blank" className="footer-button">LeetCode</a>
+            <a href="mailto:aditi03prasad@gmail.com" className="footer-button">Gmail</a>
             {/* <a href="/resume.pdf" target="_blank" className="footer-button">Resume</a>
             <a href="/feedback" className="footer-button">Feedback</a> */}
           </div>
