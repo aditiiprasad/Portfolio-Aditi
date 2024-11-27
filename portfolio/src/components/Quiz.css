@@ -8,7 +8,7 @@
     text-align: center;
     padding: 20px;
     border: 2px dashed rgb(224, 172, 198);
-    width: 90%;
+    background-color: #f40ad51a;
     border-radius: 20px;
     position: relative; /* For positioning the fire icon above content */
   }
@@ -27,7 +27,7 @@
   }
   
   .quiz-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: hotpink;
   }
@@ -37,7 +37,7 @@
   }
   
   .question-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #e1b6db;
   }
   

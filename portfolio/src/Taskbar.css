@@ -1,5 +1,7 @@
 /* src/Taskbar.css */
-
+body{
+  font-family: 'Press Start 2P ', cursive !important;
+}
 /* General Styles */
 .top-bar {
   background-color: #03031b;
@@ -8,13 +10,13 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 10px 10px;
-  
+  font-family: 'Press Start 2P', cursive !important;
   width: 85%;
   border-radius: 30px;
   box-shadow: 0 4px 10px rgba(205, 205, 144, 0.639); 
   border: 3px dotted rgb(180, 177, 180); /* Dashed border */
   position: relative;
-  
+  font-family: 'Press Start 2P', cursive;
   left: 50%;
   transform: translate(-50%, -50%);
   /* animation: blink-border 1.5s infinite; */
@@ -188,3 +190,5 @@
     margin-top: 100px; /* Increase spacing for smaller screens */
   }
 }
+  
+

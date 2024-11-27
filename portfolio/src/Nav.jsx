@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './Nav.css';
 
 import About from './components/About';
@@ -6,12 +6,13 @@ import Edu from './components/Edu';
 import Skill from './components/Skill';
 import Projects from './components/Projects';
 import Activities from './components/Activities';
-import Pprojects from './components/Pprojects'
-import PixelArt from './components/PaintCanvas'
-import Footer from './Footer'
-import Quiz from './components/Quiz'
+import Pprojects from './components/Pprojects';
+import PixelArt from './components/PaintCanvas';
+import Footer from './Footer';
+import Quiz from './components/Quiz';
 
 const Nav = () => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const AboutRef = useRef(null);
   const EduRef = useRef(null);
   const SkillRef = useRef(null);
@@ -38,18 +39,26 @@ const Nav = () => {
       default:
         break;
     }
+    setDrawerOpen(false); // Close drawer after navigation
   };
 
   return (
     <div className="app-1">
-      <div className="navbar-1">
-        <button className="navbar-btn-1" onClick={() => scrollToSection('about')}>Go to About</button>
-        <button className="navbar-btn-2" onClick={() => scrollToSection('education')}>Go to Education</button>
-        <button className="navbar-btn-3" onClick={() => scrollToSection('skills')}>Go to Skills</button>
-        <button className="navbar-btn-4" onClick={() => scrollToSection('projects')}>Go to Projects</button>
-        <button className="navbar-btn-5" onClick={() => scrollToSection('activities')}>Go to Activities</button>
+      {/* Drawer Toggle Button */}
+      <button className="drawer-toggle-btn" onClick={() => setDrawerOpen(!drawerOpen)}>
+        MENU
+      </button>
+
+      {/* Drawer */}
+      <div className={`drawer-1 ${drawerOpen ? 'open' : ''}`}>
+        <button className="drawer-btn" onClick={() => scrollToSection('about')}>About</button>
+        <button className="drawer-btn" onClick={() => scrollToSection('education')}>Education</button>
+        <button className="drawer-btn" onClick={() => scrollToSection('skills')}>Skills</button>
+        <button className="drawer-btn" onClick={() => scrollToSection('projects')}>Projects</button>
+        <button className="drawer-btn" onClick={() => scrollToSection('activities')}>Extra Curriculars</button>
       </div>
 
+      {/* Sections */}
       <div ref={AboutRef} className="about-section-1">
         <About />
       </div>
@@ -58,18 +67,15 @@ const Nav = () => {
       </div>
       <div ref={SkillRef} className="skills-section-1">
         <Skill />
-        <PixelArt/>
+        <PixelArt />
       </div>
       <div ref={ProjectsRef} className="projects-section-1">
         <Projects />
-        <Pprojects/>
-        
-       
+        <Pprojects />
       </div>
       <div ref={ActivitiesRef} className="activities-section-1">
         <Activities />
-        <Quiz/>
-        
+        <Quiz />
       </div>
     </div>
   );

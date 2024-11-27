@@ -15,16 +15,16 @@ const Modal = ({ onClose }) => {
           X
         </button>
         <div className="image-grid">
-          <a href="https://aditiiprasad.github.io/GameHub/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/aditiiprasad/GameHub" target="_blank" rel="noopener noreferrer">
             <img src={gamehub} alt="Practice Project 2" />
           </a>
-          <a href="https://aditiiprasad.github.io/CuCo/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/aditiiprasad/CuCo" target="_blank" rel="noopener noreferrer">
             <img src={cuco} alt="Practice Project 5" />
           </a>
-          <a href="https://passwordgenerator-weld-one.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/aditiiprasad/React-Practice-Projects/tree/main/03-Password-Generator" target="_blank" rel="noopener noreferrer">
             <img src={password} alt="Practice Project 4" />
           </a>
-          <a href="https://aditiiprasad.github.io/Amazon-clone/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/aditiiprasad/Amazon-clone" target="_blank" rel="noopener noreferrer">
             <img src={Aclone} alt="Practice Project 1" />
           </a>
          
@@ -33,7 +33,7 @@ const Modal = ({ onClose }) => {
           </a>
           
          
-          <a href="https://react-practice-projects-phi.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/aditiiprasad/React-Practice-Projects/tree/main/02-Background-Changer" target="_blank" rel="noopener noreferrer">
             <img src={bgchanger} alt="Practice Project 6" />
           </a>
         </div>

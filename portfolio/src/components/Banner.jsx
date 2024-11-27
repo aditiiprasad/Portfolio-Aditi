@@ -34,15 +34,14 @@ const Banner = () => {
             <h4 className='name'>Aditi</h4>
             <div className='bang' style={{ display: "flex", alignItems: "center", fontSize: "18px" }}>
              <FaMapMarkerAlt className='iconloc'  />
-             <span>Bangalore</span>
+             <span className='bng'>Bangalore</span>
              </div>
             <p className='intro'>Welcome! Let's embark on a journey through this Retro themed portfolio. Ready to collaborate?</p>
             <div className="audio-container">
-           <audio  className="custom-audio" 
-           controls autoPlay loop >
-           <source src={song} type="audio/mp3" />
-            Your browser does not support the audio element.
-          </audio>
+            <audio className="custom-audio" controls autoPlay loop >
+                  <source src={song} type="audio/mp3" />
+                  Your browser does not support the audio element.
+            </audio>
           </div>
 
 

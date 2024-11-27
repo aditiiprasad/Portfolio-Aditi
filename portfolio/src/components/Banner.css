@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+body {
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
+
 .banner{
     display: flex;
     background-color: rgba(0, 0, 0, 0.4);
@@ -5,6 +11,7 @@
     padding: 15px;
     border-radius: 20px;
     width: 90%;
+    font-family:'Times New Roman', Times, serif !important;
 
 }
 
@@ -53,6 +60,7 @@
     background-color: rgba(19, 192, 192, 0.509);
     width: 200px;
     height: 250px;
+    
 }
 
 .info{
@@ -75,13 +83,13 @@
 
 
   .type{
-    color: #b18b52;
+    color: #fad69f;
     
     font-size: 1rem;
   }
   .name{
     color: rgb(218, 199, 184);
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 20px;
     text-shadow: 3px 3px 5px rgba(189, 151, 12, 0.7);
   }
@@ -89,6 +97,11 @@
   .bang{
     color: rgb(214, 188, 150);
     margin-top: 10px;
+   
+  }
+  .bng{
+    font-size: 1rem;
+    margin-left: 20px;
   }
   .iconloc{
     color: red;
@@ -98,8 +111,8 @@
   }
 
   .intro{
-    color: rgb(123, 117, 96);
-    font-size: 17px;
+    color: rgb(139, 192, 225);
+    font-size: 15px;
     margin-top: 30px;
   }
 
@@ -144,3 +157,19 @@
  .type{
   margin-top: 30px;
  }
+
+ .intro:hover {
+  color: gray; /* Change to the desired hover color */
+}
+
+.name:hover {
+  color: gray; /* Change to the desired hover color */
+}
+
+.bang:hover {
+  color: gray; /* Change to the desired hover color */
+}
+
+.bng:hover {
+  color: gray; /* Change to the desired hover color */
+}

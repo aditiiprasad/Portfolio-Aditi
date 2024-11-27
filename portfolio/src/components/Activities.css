@@ -4,10 +4,10 @@
   }
   
   .activities-heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    color:#c0e68c;
+    color:#d6eaba;
   }
   
   .activities-container {
@@ -39,15 +39,15 @@
   .activities-content {
     max-width: 800px;
     text-align: left;
-    border: 1px solid wheat;
-    padding: 20px;
+    border: 1px solid rgb(116, 116, 115);
+    padding: 30px;
     border-radius: 20px;
   }
   
   .activities-title {
     font-size: 1rem;
     font-weight: bold;
-    color: #acd8c4;
+    color: #e6d9d9;
     margin-bottom: 10px;
     transition: color 0.3s ease; /* Smooth transition */
   }
@@ -59,8 +59,9 @@
     transition: color 0.3s ease; /* Smooth transition */
   }
   .act-year{
-    color: #c0e68c;
+    color: #6a6c68;
     transition: color 0.3s ease; /* Smooth transition */
+    font-size: 0.8;
   }
 
   /* Hover effects */

@@ -3,45 +3,63 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Navbar Styles */
-  .navbar-1 {
-    position: sticky;
+  /* Drawer Styles */
+  .drawer-1 {
+    position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
+    left: -250px;
+    border-radius: 15px;
+    width: 200px;
+    background-color: #202020d9;
     color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    z-index: 100;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 200;
+    padding-top: 70px;
+    border: 2px dashed gray;
+    
   }
   
-  .navbar-btn-1,
-  .navbar-btn-2,
-  .navbar-btn-3,
-  .navbar-btn-4,
-  .navbar-btn-5 {
-    background-color: #444;
-    color: white;
+  .drawer-1.open {
+    left: 0;
+  }
+  
+  .drawer-btn {
+    display: block;
+    background-color: #050505;
+    color: rgb(141, 138, 138);
     border: none;
     padding: 10px;
-    cursor: pointer;
-    font-size: 1rem;
+    margin: 10px 0;
+    font-size: 0.8rem;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s;
   }
   
-  .navbar-btn-1:hover,
-  .navbar-btn-2:hover,
-  .navbar-btn-3:hover,
-  .navbar-btn-4:hover,
-  .navbar-btn-5:hover {
+  .drawer-btn:hover {
     background-color: #555;
   }
   
+  /* Drawer Toggle Button */
+  .drawer-toggle-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: rgb(166, 165, 165);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 300;
+    
+  }
   
+  .drawer-toggle-btn:hover {
+    background-color: #444;
+    
+
+  }
   
-  
- 

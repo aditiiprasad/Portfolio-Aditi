@@ -39,8 +39,11 @@
   color: rgb(254, 254, 254);
   padding: 10px 20px;
   font-size: 20px;
+  
 }
-
+.languages-container:hover{
+  font-size: 25px;
+}
 .jjc {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping to the next line */
