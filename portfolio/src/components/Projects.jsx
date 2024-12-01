@@ -4,6 +4,7 @@ import './Projects.css';
 import tt from './images/tt.png';
 import cc from './images/cc.png';
 import gupshup from './images/gupshup.png';
+import gad from "./images/gad.png"
 
 const Projects = () => {
   return (
@@ -62,6 +63,23 @@ by 30%.</p>
             </div>
           </div>
         </div>
+
+
+        <div className="project">
+          <div className="project-image">
+            <img src={gad} alt="Project 1" />
+          </div>
+          <div className="project-details">
+          <h5>Google Themed Portfolio</h5>
+            <p>◦ A personal website simulating the Google Search platform. Developed with HTML, CSS and React.</p>
+            <div className="project-buttons">
+              <a href="https://google-themed-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn">Live Project</a>
+              <a href="https://github.com/aditiiprasad/Google-Themed-Portfolio" target="_blank" rel="noopener noreferrer" className="btn">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+     
 
      
 
